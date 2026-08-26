@@ -1,12 +1,6 @@
-export default function CredibilityStrip() {
-  const credibility = [
-    ["CERTIFICATION", "NEBB CERTIFIED"],
-    ["PRESENCE", "8 COUNTRIES"],
-    ["ESTABLISHED", "SINCE 2011"],
-    ["PORTFOLIO", "87+ PROJECTS"],
-    ["DISCIPLINE", "TESTING & COMMISSIONING"],
-  ];
+import {credibility} from "../../data/ebc";
 
+export default function CredibilityStrip() {
   return (
     <section className="border-b border-[#E6E7E8] bg-white">
       <div className="mx-auto w-full max-w-[88rem] px-5 md:px-10 xl:px-14">

@@ -1,41 +1,6 @@
-export default function WhatEbcDoes() {
-  const steps = [
-    {
-      no: "01",
-      title: "INSTALLED SYSTEM",
-      description: "Static completion of MEP installation.",
-    },
-    {
-      no: "02",
-      title: "TESTING",
-      description:
-        "Measurement of airflow, pressure, temperature and electrical performance.",
-    },
-    {
-      no: "03",
-      title: "ADJUSTMENT",
-      description: "Regulation and fine tuning of the system components.",
-    },
-    {
-      no: "04",
-      title: "COMMISSIONING",
-      description:
-        "Setting to work; witnessing Functional Performance Tests.",
-    },
-    {
-      no: "05",
-      title: "VERIFICATION",
-      description:
-        "Verification of actual measurements against design and OPR.",
-    },
-    {
-      no: "06",
-      title: "OPERATIONAL CONFIDENCE",
-      description:
-        "Documented, reliable, safe building performance.",
-    },
-  ];
+import { steps } from "../../data/ebc";
 
+export default function WhatEbcDoes() {
   return (
     <section className="relative overflow-hidden bg-[#06131e] text-white">
       {/* Engineering grid */}
@@ -88,16 +53,16 @@ export default function WhatEbcDoes() {
             className="lg:col-span-5"
           >
             <p className="text-white/70">
-              The advancement of an installation from static completion to
-              full working order to the specified requirement, the setting to
-              work of an installation, the regulation of the system and the
-              fine tuning of the system.
+              The advancement of an installation from static completion to full
+              working order to the specified requirement, the setting to work of
+              an installation, the regulation of the system and the fine tuning
+              of the system.
             </p>
           </div>
         </div>
 
         {/* Steps */}
-        <div className="mt-16 grid gap-px border-t border-white/[0.12] sm:grid-cols-2 lg:grid-cols-6">
+        <div className="mt-16 grid gap-px border-t border-white/[0.12] sm:grid-cols-2 lg:grid-cols-5">
           {steps.map((step, index) => (
             <div
               key={step.no}
@@ -120,9 +85,7 @@ export default function WhatEbcDoes() {
               </h3>
 
               {/* Description */}
-              <p className="mt-3 text-sm text-white/55">
-                {step.description}
-              </p>
+              <p className="mt-3 text-sm text-white/55">{step.description}</p>
 
               {/* Arrow */}
               {index < steps.length - 1 && (

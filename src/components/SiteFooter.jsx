@@ -1,32 +1,12 @@
+import { STANDARDS } from "../data/ebc";
+import { SITE } from "../data/ebc";
 import { Link } from "react-router-dom";
-const STANDARDS = [
-  { code: "NEBB", note: "Certified TAB and commissioning provider" },
-  { code: "ASHRAE", note: "Codes of practice for HVAC testing and balancing" },
-  { code: "AABC", note: "Codes of practice for testing, adjusting and balancing" },
-  { code: "ISO EN 14644", note: "Cleanroom testing and classification" },
-  { code: "EU GMP ANNEX 1", note: "Cleanroom validation for sterile manufacture" },
-  { code: "LEED", note: "Fundamental and enhanced commissioning as third-party CxA" },
-  { code: "IEE 17th EDITION", note: "Electrical wiring and installation testing" },
-  { code: "DEWA / ADDC", note: "Electrical testing codes of practice" },
-];
-
-const SITE = {
-  name: "EBC-International",
-  tagline: "Elite Building Commissioning",
-  email: "Info@theebc-eg.com",
-  telephone: "0226716964",
-  mobile: "00201004109006",
-  since: "2011",
-  countries: "8",
-  projectsCount: "87+",
-};
 
 export default function SiteFooter() {
   return (
     <footer className="bg-[#06131e] text-white">
       {/* Main Footer */}
       <div className="mx-auto grid w-full max-w-[1400px] gap-12 border-b border-white/10 px-6 py-16 md:grid-cols-2 lg:grid-cols-4 lg:px-14 lg:py-20">
-
         {/* Company */}
         <div className="lg:col-span-2">
           <div className="flex items-center gap-3">
@@ -42,9 +22,9 @@ export default function SiteFooter() {
           </p>
 
           <p className="mt-6 max-w-md font-['IBM_Plex_Sans'] text-sm leading-6 text-white/70">
-            A NEBB certified TAB and commissioning provider serving the Egyptian market and the
-            MENA region, with a portfolio of projects stretching over 8 countries and of various
-            scales.
+            A NEBB certified TAB and commissioning provider serving the Egyptian
+            market and the MENA region, with a portfolio of projects stretching
+            over 8 countries and of various scales.
           </p>
 
           {/* Standards */}
@@ -94,7 +74,6 @@ export default function SiteFooter() {
           </p>
 
           <ul className="mt-5 space-y-4 font-['IBM_Plex_Sans'] text-sm text-white/70">
-
             {/* Email */}
             <li>
               <span className="block font-['IBM_Plex_Sans'] text-[0.625rem] font-medium uppercase tracking-[0.12em] text-white/40">
@@ -136,14 +115,12 @@ export default function SiteFooter() {
                 {SITE.mobile}
               </a>
             </li>
-
           </ul>
         </div>
       </div>
 
       {/* Bottom Footer */}
       <div className="mx-auto flex w-full max-w-[1400px] flex-col gap-2 px-6 py-6 sm:flex-row sm:items-center sm:justify-between lg:px-10">
-
         <p className="font-['IBM_Plex_Sans'] text-xs font-medium uppercase tracking-[0.12em] text-white/40">
           © {new Date().getFullYear()} EBC-International
         </p>
@@ -151,7 +128,6 @@ export default function SiteFooter() {
         <p className="font-['IBM_Plex_Sans'] text-xs font-medium uppercase tracking-[0.12em] text-white/40">
           Measure. Verify. Perform.
         </p>
-
       </div>
     </footer>
   );

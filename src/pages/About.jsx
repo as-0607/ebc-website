@@ -1,45 +1,10 @@
 import Navbar from "../components/Navbar";
-import  SiteFooter  from "../components/SiteFooter";
+import SiteFooter from "../components/SiteFooter";
 import PageHeader from "../components/PageHeader";
-import  CTASection  from "../components/CTASection";
-
-const MISSION_POINTS = [
-  "Validation of construction integrity.",
-  "Confirmation of operability of the facility in terms of performance, reliability, safety and security.",
-  "Provide cost effective solutions for our clients through the commissioning management process.",
-  "Optimizing energy use.",
-  "Increase productivity by creating optimal workplace environments.",
-  "Provide documentation, to serve as the historical record of the \u201cWhat?, Why? and How to?\u201d of key delivery team decisions throughout the planning and delivery process.",
-  "Maintain facility performance for the building's entire life cycle.",
-];
-
-const PRINCIPLES = [
-  "Ensuring the safety of all our employees, customers, and associates.",
-  "Valuing people as the essential asset of our company with a shared responsibility in fulfilling our mission.",
-  "Executing quality work that exceeds expectations.",
-  "Governing ourselves with integrity in our operations and professional relationships.",
-  "Demonstrating innovation and an entrepreneurial spirit.",
-];
-
-
-
-const TIMELINE = [
-  {
-    year: "2011",
-    title: "OUR BEGINNING",
-    text: "EBC-International begins providing testing and commissioning services to the Egyptian market, with a history of premier service dating back to 2011.",
-  },
-  {
-    year: "GROWTH",
-    title: "ENRICHED SERVICE OFFERING",
-    text: "From local beginnings, EBC enjoys continuous growth and enrichment of service offerings — commissioning management, TAB, electrical testing and cleanroom validation.",
-  },
-  {
-    year: "TODAY",
-    title: "INTERNATIONAL PRESENCE",
-    text: "Growth oriented and expanding on an international scale, providing services to projects in Doha, Dubai, Sudan, Djibouti, Saudi Arabia and Italy.",
-  },
-];
+import CTASection from "../components/CTASection";
+import { MISSION_POINTS } from "../data/ebc";
+import { PRINCIPLES } from "../data/ebc";
+import { TIMELINE } from "../data/ebc";
 
 export default function About() {
   return (

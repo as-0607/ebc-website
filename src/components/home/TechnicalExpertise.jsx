@@ -1,30 +1,7 @@
+import { measurements } from "../../data/ebc";
+import { expertise } from "../../data/ebc";
+
 export default function TechnicalExpertise() {
-  const measurements = [
-    "AIRFLOW",
-    "PRESSURE",
-    "TEMPERATURE",
-    "HUMIDITY",
-    "VIBRATION",
-    "SOUND",
-    "ELECTRICAL",
-    "PARTICLE COUNT",
-  ];
-
-  const expertise = [
-    {
-      k: "TAB",
-      v: "Testing, adjusting & balancing of HVAC systems",
-    },
-    {
-      k: "CLEANROOM",
-      v: "Particle count, filter integrity, pressure differential",
-    },
-    {
-      k: "ELECTRICAL",
-      v: "Relay, transformer, cable and breaker testing",
-    },
-  ];
-
   return (
     <section className="bg-[#F4F6F7] py-20 lg:py-28">
       <div className="mx-auto grid w-full max-w-[88rem] gap-12 px-5 md:px-10 lg:grid-cols-12 lg:gap-16 xl:px-14">

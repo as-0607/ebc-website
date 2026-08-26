@@ -1,39 +1,6 @@
-export default function StandardsSection() {
-  const STANDARDS = [
-    {
-      code: "NEBB",
-      note: "Certified TAB and commissioning provider",
-    },
-    {
-      code: "ASHRAE",
-      note: "Codes of practice for HVAC testing and balancing",
-    },
-    {
-      code: "AABC",
-      note: "Codes of practice for testing, adjusting and balancing",
-    },
-    {
-      code: "ISO EN 14644",
-      note: "Cleanroom testing and classification",
-    },
-    {
-      code: "EU GMP ANNEX 1",
-      note: "Cleanroom validation for sterile manufacture",
-    },
-    {
-      code: "LEED",
-      note: "Fundamental and enhanced commissioning as third-party CxA",
-    },
-    {
-      code: "IEE 17th EDITION",
-      note: "Electrical wiring and installation testing",
-    },
-    {
-      code: "DEWA / ADDC",
-      note: "Electrical testing codes of practice",
-    },
-  ];
+import {STANDARDS} from "../../data/ebc";
 
+export default function StandardsSection() {
   return (
     <section className=" py-20 lg:py-28">
       <div className="mx-auto grid w-full max-w-[1400px] gap-12 px-6 lg:grid-cols-12 lg:gap-16 lg:px-10">

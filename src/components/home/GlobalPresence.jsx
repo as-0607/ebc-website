@@ -1,14 +1,5 @@
+import {COUNTRIES} from "../../data/ebc";
 import { Link } from "react-router-dom";
-
-const COUNTRIES = [
-  { name: "Egypt", note: "Headquarters — Cairo" },
-  { name: "Qatar", note: "Doha" },
-  { name: "United Arab Emirates", note: "Dubai" },
-  { name: "Saudi Arabia", note: "" },
-  { name: "Sudan", note: "" },
-  { name: "Djibouti", note: "" },
-  { name: "Italy", note: "" },
-];
 
 const MARKERS = {
   Egypt: { x: 47, y: 55 },
@@ -48,14 +39,9 @@ export default function GlobalPresence() {
         }}
       />
 
-      <div
-        className="relative mx-auto grid w-full max-w-[88rem] gap-14 px-5 lg:grid-cols-12 lg:gap-20 lg:py-0 md:px-10 xl:px-14"
-      >
+      <div className="relative mx-auto grid w-full max-w-[88rem] gap-14 px-5 lg:grid-cols-12 lg:gap-20 lg:py-0 md:px-10 xl:px-14">
         {/* LEFT */}
-        <div
-          data-aos="fade-up"
-          className="lg:col-span-5"
-        >
+        <div data-aos="fade-up" className="lg:col-span-5">
           <div className="flex items-center gap-4">
             <span
               className="h-px w-12"
@@ -68,7 +54,8 @@ export default function GlobalPresence() {
               className="uppercase"
               style={{
                 color: "oklch(0.6083 0.209 27.03)",
-                fontFamily: '"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif',
+                fontFamily:
+                  '"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif',
                 fontSize: "0.6875rem",
                 letterSpacing: "0.22em",
                 fontWeight: 500,
@@ -102,15 +89,16 @@ export default function GlobalPresence() {
             }}
           >
             From local beginnings in 2011 to a portfolio stretching over 8
-            countries, EBC provides services to projects in Doha, Dubai,
-            Sudan, Djibouti, Saudi Arabia and Italy.
+            countries, EBC provides services to projects in Doha, Dubai, Sudan,
+            Djibouti, Saudi Arabia and Italy.
           </p>
 
           <Link
             to="/global-presence"
             className="mt-8 inline-flex items-center gap-3 border-b-2 pb-2 uppercase transition-colors hover:text-red-500"
             style={{
-              fontFamily: '"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif',
+              fontFamily:
+                '"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif',
               fontSize: "0.6875rem",
               letterSpacing: "0.22em",
               fontWeight: 500,
@@ -124,11 +112,7 @@ export default function GlobalPresence() {
         </div>
 
         {/* RIGHT */}
-        <div
-          data-aos="fade-up"
-          data-aos-delay="120"
-          className="lg:col-span-7"
-        >
+        <div data-aos="fade-up" data-aos-delay="120" className="lg:col-span-7">
           {/* Map */}
           <div
             className="relative aspect-[4/3] w-full border"
@@ -161,7 +145,8 @@ export default function GlobalPresence() {
               className="absolute top-4 left-4 uppercase"
               style={{
                 color: "rgb(255 255 255 / 35%)",
-                fontFamily: '"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif',
+                fontFamily:
+                  '"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif',
                 fontSize: "0.6875rem",
                 letterSpacing: "0.22em",
                 fontWeight: 500,
@@ -203,7 +188,8 @@ export default function GlobalPresence() {
                     className="absolute top-3 left-2 whitespace-nowrap transition-colors group-hover:text-white"
                     style={{
                       color: "rgb(255 255 255 / 70%)",
-                      fontFamily: '"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif',
+                      fontFamily:
+                        '"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif',
                       fontSize: "0.6875rem",
                       letterSpacing: "0.22em",
                       fontWeight: 500,
@@ -237,7 +223,8 @@ export default function GlobalPresence() {
                 <p
                   className="tracking-tight"
                   style={{
-                    fontFamily: '"Archivo", ui-sans-serif, system-ui, sans-serif',
+                    fontFamily:
+                      '"Archivo", ui-sans-serif, system-ui, sans-serif',
                     fontSize: "0.875rem",
                     fontWeight: 700,
                   }}
@@ -269,5 +256,3 @@ export default function GlobalPresence() {
     </section>
   );
 }
-
-

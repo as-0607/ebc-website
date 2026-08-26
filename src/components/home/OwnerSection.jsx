@@ -77,10 +77,10 @@ export default function OwnerSection() {
 
             <ol className="mt-6 grid grid-cols-2 gap-x-6 sm:grid-cols-4">
               {[
-                "DESIGN",
-                "INSTALLATION",
+                "DESIGN REVIEW",
+                "CONSTRUCTION REVIEW",
+                "SYSTEM READINESS",
                 "TEST",
-                "ADJUST",
                 "COMMISSION",
                 "VERIFY",
                 "DOCUMENT",

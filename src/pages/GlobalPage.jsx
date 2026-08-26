@@ -2,63 +2,25 @@ import Navbar from "../components/Navbar";
 import SiteFooter from "../components/SiteFooter";
 import PageHeader from "../components/PageHeader";
 import CTASection from "../components/CTASection";
-const PROJECTS = [
-  {
-    name: "City of Science & Technology, B-06",
-    image:
-      "https://theebc-eg.com/wp-content/uploads/2023/01/City-of-Science-Technology-768x599.jpg",
-    country: "Egypt",
-    sector: "Educational",
-  },
-  {
-    name: "The American University in Cairo",
-    image: "https://theebc-eg.com/wp-content/uploads/2023/01/AUC-768x512.webp",
-    country: "Egypt",
-    sector: "Educational",
-  },
-  {
-    name: "Alex Stadium",
-    image:
-      "https://theebc-eg.com/wp-content/uploads/2023/01/Alexandria-Stadium.webp",
-    country: "Egypt",
-    sector: "Sporting Clubs",
-  },
-  {
-    name: "U.S Embassy Compound, Khartoum",
-    image:
-      "https://theebc-eg.com/wp-content/uploads/2023/01/U.S-Embassy-Compound-Khartoum-768x513.jpg",
-    country: "Sudan",
-    sector: "Commercial & Administrative",
-  },
-];
-const COUNTRIES = [
-  { name: "Egypt", note: "Headquarters — Cairo" },
-  { name: "Qatar", note: "Doha" },
-  { name: "United Arab Emirates", note: "Dubai" },
-  { name: "Saudi Arabia", note: "" },
-  { name: "Sudan", note: "" },
-  { name: "Djibouti", note: "" },
-  { name: "Italy", note: "" },
-];
-const SITE = {
-  name: "EBC-International",
-  tagline: "Elite Building Commissioning",
-  email: "Info@theebc-eg.com",
-  telephone: "0226716964",
-  mobile: "00201004109006",
-  since: "2011",
-  countries: "8",
-  projectsCount: "87+",
-};
+import { SITE } from "../data/ebc";
+import { COUNTRIES } from "../data/ebc";
+import { PROJECTS } from "../data/ebc";
+
 export default function GlobalPage() {
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <main>
         <PageHeader
           label="05 / Global Presence"
           meta={`${SITE.countries} COUNTRIES · ${SITE.projectsCount} PROJECTS`}
-          title={<>GROWTH ORIENTED, ON<br/>AN INTERNATIONAL SCALE.</>}
+          title={
+            <>
+              GROWTH ORIENTED, ON
+              <br />
+              AN INTERNATIONAL SCALE.
+            </>
+          }
           intro="EBC-International serves clients across the Middle East, North Africa and Europe, with projects delivered in Egypt, Qatar, the UAE, Saudi Arabia, Sudan, Djibouti and Italy."
           image="https://theebc-eg.com/wp-content/uploads/2023/01/Alexandria-Stadium.webp"
         />
@@ -179,7 +141,7 @@ export default function GlobalPage() {
 
         <CTASection />
       </main>
-      <SiteFooter/>
+      <SiteFooter />
     </>
   );
 }

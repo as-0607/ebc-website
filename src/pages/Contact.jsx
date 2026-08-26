@@ -1,16 +1,19 @@
-import { useState } from "react";
+import { useForm } from "@formspree/react";
 import Navbar from "../components/Navbar";
 import SiteFooter from "../components/SiteFooter";
 import PageHeader from "../components/PageHeader";
-import { SITE } from "../data/ebc";
-import { SERVICES } from "../data/ebc";
+import { SITE, SERVICES } from "../data/ebc";
+
 const FIELD =
   "w-full border border-[#E2E4E5] bg-white px-4 py-3.5 text-sm text-[#07131F] outline-none transition-colors placeholder:text-[#07131F]/35 focus:border-[#E53935]";
+
 export default function Contact() {
-  const [sent, setSent] = useState(false);
+  const [state, handleSubmit] = useForm("xdeonkoj");
+
   return (
     <>
       <Navbar />
+
       <main>
         <PageHeader
           label="06 / Contact"
@@ -40,10 +43,7 @@ export default function Contact() {
 
               <form
                 className="mt-8 grid gap-4 sm:grid-cols-2"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setSent(true);
-                }}
+                onSubmit={handleSubmit}
               >
                 {/* Full Name */}
                 <label className="block">
@@ -142,14 +142,23 @@ export default function Contact() {
                 <div className="flex flex-wrap items-center gap-4 sm:col-span-2">
                   <button
                     type="submit"
-                    className="font-['IBM_Plex_Sans'] bg-[#E53935] px-8 py-4 text-[0.6875rem] font-medium leading-[1.2] tracking-[0.22em] uppercase text-white transition-colors hover:bg-[#C9322E]"
+                    disabled={state.submitting}
+                    className="font-['IBM_Plex_Sans'] bg-[#E53935] px-8 py-4 text-[0.6875rem] font-medium leading-[1.2] tracking-[0.22em] uppercase text-white transition-colors hover:bg-[#C9322E] disabled:cursor-not-allowed disabled:opacity-60"
                   >
-                    Send enquiry →
+                    {state.submitting ? "Sending..." : "Send enquiry →"}
                   </button>
 
-                  {sent && (
+                  {/* Success Message */}
+                  {state.succeeded && (
                     <span className="font-['IBM_Plex_Sans'] text-[0.6875rem] font-medium leading-[1.2] tracking-[0.22em] uppercase text-[#07131F]/60">
                       Thank you — we&apos;ll be in touch shortly.
+                    </span>
+                  )}
+
+                  {/* Error Message */}
+                  {state.errors && (
+                    <span className="font-['IBM_Plex_Sans'] text-[0.6875rem] font-medium leading-[1.2] tracking-[0.22em] uppercase text-[#E53935]">
+                      Something went wrong. Please try again.
                     </span>
                   )}
                 </div>
@@ -240,6 +249,7 @@ export default function Contact() {
           </div>
         </section>
       </main>
+
       <SiteFooter />
     </>
   );

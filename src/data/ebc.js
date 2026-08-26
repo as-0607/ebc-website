@@ -329,10 +329,99 @@ export const PROJECTS = [
     sector: "Educational",
   },
   {
+    name: "Kattamiya Mall Lifestyle Area",
+    image:
+      "https://theebc-eg.com/wp-content/uploads/2023/01/Kattamya-mall-768x432.jpg",
+    country: "Egypt",
+    sector: "Commercial & Administrative",
+  },
+  {
+    name: "U.S Embassy Compound, Khartoum",
+    image:
+      "https://theebc-eg.com/wp-content/uploads/2023/01/U.S-Embassy-Compound-Khartoum-768x513.jpg",
+    country: "Others",
+    sector: "Commercial & Administrative",
+  },
+  {
     name: "The American University in Cairo",
     image: "https://theebc-eg.com/wp-content/uploads/2023/01/AUC-768x512.webp",
     country: "Egypt",
     sector: "Educational",
+  },
+  {
+    name: "Wadi Degla Sporting Club, 6th of October",
+    image:
+      "https://theebc-eg.com/wp-content/uploads/2023/01/Wadi-Degla-6th-October-768x512.jpg",
+    country: "Egypt",
+    sector: "Sporting Clubs",
+  },
+  {
+    name: "Banque De Caire",
+    image:
+      "https://theebc-eg.com/wp-content/uploads/2023/01/Banque-de-Caire-768x492.jpg",
+    country: "Egypt",
+    sector: "Banks",
+  },
+  {
+    name: "Alex Bank, Zagazig Branch",
+    image:
+      "https://theebc-eg.com/wp-content/uploads/2023/01/Alex-Bank-Zagazig-1.jpg",
+    country: "Egypt",
+    sector: "Banks",
+  },
+  {
+    name: "CIB, Marsa Matrouh",
+    image:
+      "https://theebc-eg.com/wp-content/uploads/2023/01/CIB-Marsa-Matrouh.jpg",
+    country: "Egypt",
+    sector: "Banks",
+  },
+  {
+    name: "Raya Offices Building",
+    image:
+      "https://theebc-eg.com/wp-content/uploads/2023/01/Raya-Offices-Building.jpg",
+    country: "Egypt",
+    sector: "Commercial & Administrative",
+  },
+  {
+    name: "Ministries 15&16 A",
+    image:
+      "https://theebc-eg.com/wp-content/uploads/2023/01/Ministries-15-16-A-768x354.jpg",
+    country: "Egypt",
+    sector: "Commercial & Administrative",
+  },
+  {
+    name: "Egyptian Ambulance Authority Headquarters",
+    image:
+      "https://theebc-eg.com/wp-content/uploads/2023/01/Egyptioan-Ambulance-Authority-HeadQuarters.jpg",
+    country: "Egypt",
+    sector: "Commercial & Administrative",
+  },
+  {
+    name: "AL Watany Bank of Egypt",
+    image:
+      "https://theebc-eg.com/wp-content/uploads/2023/01/AWB-bank-768x432.webp",
+    country: "Egypt",
+    sector: "Banks",
+  },
+  {
+    name: "Piraeus Bank, El Zamalek Branch",
+    image: "https://theebc-eg.com/wp-content/uploads/2023/01/Piraeus-Bank.jpg",
+    country: "Egypt",
+    sector: "Banks",
+  },
+  {
+    name: "ABC Bank",
+    image: "https://theebc-eg.com/wp-content/uploads/2023/01/ABC-Bank.jpg",
+    country: "Egypt",
+    sector: "Banks",
+  },
+  {
+    name: "International Shooting Club, New Admin Capital",
+    image:
+      "https://theebc-eg.com/wp-content/uploads/2023/01/International-Shooting-Club-768x432.jpg",
+    country: "Egypt",
+    sector: "Sporting Clubs",
   },
   {
     name: "Alex Stadium",
@@ -342,12 +431,44 @@ export const PROJECTS = [
     sector: "Sporting Clubs",
   },
   {
-    name: "U.S Embassy Compound, Khartoum",
+    name: "El Salam Stadium",
     image:
-      "https://theebc-eg.com/wp-content/uploads/2023/01/U.S-Embassy-Compound-Khartoum-768x513.jpg",
-    country: "Sudan",
-    sector: "Commercial & Administrative",
+      "https://theebc-eg.com/wp-content/uploads/2023/01/EL-Salam-Stadium-1-768x465.jpg",
+    country: "Egypt",
+    sector: "Sporting Clubs",
   },
+  {
+    name: "National Olympic Center",
+    image:
+      "https://theebc-eg.com/wp-content/uploads/2023/01/National-olympic-Center.jpg",
+    country: "Egypt",
+    sector: "Sporting Clubs",
+  },
+  {
+    name: "Swan Lake Sports Club",
+    image:
+      "https://theebc-eg.com/wp-content/uploads/2023/01/Swan-Lake-768x509.jpg",
+    country: "Egypt",
+    sector: "Sporting Clubs",
+  },
+  {
+    name: "Shooting Club, 6th of October",
+    image:
+      "https://theebc-eg.com/wp-content/uploads/2023/01/Shooting-Club-6th-of-october-768x432.jpg",
+    country: "Egypt",
+    sector: "Sporting Clubs",
+  },
+
+  // Add your KSA projects here
+  // Example:
+  /*
+  {
+    name: "KSA Project Name",
+    image: "...",
+    country: "KSA",
+    sector: "Educational",
+  },
+  */
 ];
 export const process = [
   {

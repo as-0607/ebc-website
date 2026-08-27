@@ -327,6 +327,9 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/City-of-Science-Technology-768x599.jpg",
     country: "Egypt",
     sector: "Educational",
+    contractor: "",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "Kattamiya Mall Lifestyle Area",
@@ -334,6 +337,9 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/Kattamya-mall-768x432.jpg",
     country: "Egypt",
     sector: "Commercial & Administrative",
+    contractor: "Contractor Name",
+    consultant: "",
+    system: "System Type",
   },
   {
     name: "U.S Embassy Compound, Khartoum",
@@ -341,12 +347,18 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/U.S-Embassy-Compound-Khartoum-768x513.jpg",
     country: "Others",
     sector: "Commercial & Administrative",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "",
   },
   {
     name: "The American University in Cairo",
     image: "https://theebc-eg.com/wp-content/uploads/2023/01/AUC-768x512.webp",
     country: "Egypt",
     sector: "Educational",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "Wadi Degla Sporting Club, 6th of October",
@@ -354,6 +366,9 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/Wadi-Degla-6th-October-768x512.jpg",
     country: "Egypt",
     sector: "Sporting Clubs",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "Banque De Caire",
@@ -361,6 +376,9 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/Banque-de-Caire-768x492.jpg",
     country: "Egypt",
     sector: "Banks",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "Alex Bank, Zagazig Branch",
@@ -368,6 +386,9 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/Alex-Bank-Zagazig-1.jpg",
     country: "Egypt",
     sector: "Banks",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "CIB, Marsa Matrouh",
@@ -375,6 +396,9 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/CIB-Marsa-Matrouh.jpg",
     country: "Egypt",
     sector: "Banks",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "Raya Offices Building",
@@ -382,6 +406,9 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/Raya-Offices-Building.jpg",
     country: "Egypt",
     sector: "Commercial & Administrative",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "Ministries 15&16 A",
@@ -389,6 +416,9 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/Ministries-15-16-A-768x354.jpg",
     country: "Egypt",
     sector: "Commercial & Administrative",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "Egyptian Ambulance Authority Headquarters",
@@ -396,6 +426,9 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/Egyptioan-Ambulance-Authority-HeadQuarters.jpg",
     country: "Egypt",
     sector: "Commercial & Administrative",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "AL Watany Bank of Egypt",
@@ -403,18 +436,27 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/AWB-bank-768x432.webp",
     country: "Egypt",
     sector: "Banks",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "Piraeus Bank, El Zamalek Branch",
     image: "https://theebc-eg.com/wp-content/uploads/2023/01/Piraeus-Bank.jpg",
     country: "Egypt",
     sector: "Banks",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "ABC Bank",
     image: "https://theebc-eg.com/wp-content/uploads/2023/01/ABC-Bank.jpg",
     country: "Egypt",
     sector: "Banks",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "International Shooting Club, New Admin Capital",
@@ -422,6 +464,9 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/International-Shooting-Club-768x432.jpg",
     country: "Egypt",
     sector: "Sporting Clubs",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "Alex Stadium",
@@ -429,6 +474,9 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/Alexandria-Stadium.webp",
     country: "Egypt",
     sector: "Sporting Clubs",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "El Salam Stadium",
@@ -436,6 +484,9 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/EL-Salam-Stadium-1-768x465.jpg",
     country: "Egypt",
     sector: "Sporting Clubs",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "National Olympic Center",
@@ -443,6 +494,9 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/National-olympic-Center.jpg",
     country: "Egypt",
     sector: "Sporting Clubs",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "Swan Lake Sports Club",
@@ -450,6 +504,9 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/Swan-Lake-768x509.jpg",
     country: "Egypt",
     sector: "Sporting Clubs",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
   {
     name: "Shooting Club, 6th of October",
@@ -457,18 +514,10 @@ export const PROJECTS = [
       "https://theebc-eg.com/wp-content/uploads/2023/01/Shooting-Club-6th-of-october-768x432.jpg",
     country: "Egypt",
     sector: "Sporting Clubs",
+    contractor: "Contractor Name",
+    consultant: "Consultant Name",
+    system: "System Type",
   },
-
-  // Add your KSA projects here
-  // Example:
-  /*
-  {
-    name: "KSA Project Name",
-    image: "...",
-    country: "KSA",
-    sector: "Educational",
-  },
-  */
 ];
 export const process = [
   {

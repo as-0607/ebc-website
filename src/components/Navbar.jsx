@@ -7,7 +7,7 @@ const NAV = [
   { to: "/projects", label: "Projects" },
   { to: "/expertise", label: "Expertise" },
   { to: "/global-presence", label: "Global Presence" },
-  { to: "/contact", label: "Contact" },
+  { to: "/contact", label: "Contact US" },
 ];
 
 export default function Navbar({ overHero = false }) {
@@ -98,7 +98,7 @@ export default function Navbar({ overHero = false }) {
             to="/contact"
             className="hidden bg-[#E53935] px-5 py-3 text-[11px] font-bold uppercase tracking-[0.12em] text-white transition-colors duration-200 hover:bg-[#C92F2B] lg:inline-flex"
           >
-            Let's Talk
+            Credentials
           </Link>
 
           {/* Mobile menu button */}
@@ -157,7 +157,7 @@ export default function Navbar({ overHero = false }) {
               onClick={() => setOpen(false)}
               className="mb-4 mt-4 bg-[#E53935] px-5 py-4 text-center text-[11px] font-bold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#C92F2B]"
             >
-              Let's Talk
+              Credentials
             </Link>
           </div>
         </div>

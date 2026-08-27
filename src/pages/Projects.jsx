@@ -260,34 +260,57 @@ export default function Projects() {
             </div>
 
             {/* Details */}
-            <div className="p-7 md:p-10">
-              <p className="font-['IBM_Plex_Sans'] text-[0.6875rem] font-medium uppercase tracking-[0.2em] text-[#C8102E]">
-                {selectedProject.sector}
-              </p>
-
-              <h2 className="mt-3 max-w-3xl font-['Archivo'] text-3xl font-extrabold leading-tight tracking-[-0.035em] text-[#2F3640] md:text-4xl">
-                {selectedProject.name}
-              </h2>
-
-              <div className="mt-8 grid gap-px bg-[#E6E7E8] sm:grid-cols-2">
-                <div className="bg-[#F4F5F5] p-5">
-                  <p className="font-['IBM_Plex_Sans'] text-[0.625rem] font-medium uppercase tracking-[0.2em] text-[#A4A9AE]">
-                    Location
-                  </p>
-                  <p className="mt-2 font-['Archivo'] text-base font-bold text-[#2F3640]">
-                    {selectedProject.country}
-                  </p>
-                </div>
-
-                <div className="bg-[#F4F5F5] p-5">
-                  <p className="font-['IBM_Plex_Sans'] text-[0.625rem] font-medium uppercase tracking-[0.2em] text-[#A4A9AE]">
-                    Sector
-                  </p>
-                  <p className="mt-2 font-['Archivo'] text-base font-bold text-[#2F3640]">
-                    {selectedProject.sector}
-                  </p>
-                </div>
+            <div className=" grid gap-px bg-[#E6E7E8] sm:grid-cols-2">
+              <div className="bg-[#F4F5F5] p-5">
+                <p className="font-['IBM_Plex_Sans'] text-[0.625rem] font-medium uppercase tracking-[0.2em] text-[#A4A9AE]">
+                  Location
+                </p>
+                <p className="mt-2 font-['Archivo'] text-base font-bold text-[#2F3640]">
+                  {selectedProject.country}
+                </p>
               </div>
+
+              <div className="bg-[#F4F5F5] p-5">
+                <p className="font-['IBM_Plex_Sans'] text-[0.625rem] font-medium uppercase tracking-[0.2em] text-[#A4A9AE]">
+                  Sector
+                </p>
+                <p className="mt-2 font-['Archivo'] text-base font-bold text-[#2F3640]">
+                  {selectedProject.sector}
+                </p>
+              </div>
+
+              {selectedProject.contractor && (
+                <div className="bg-[#F4F5F5] p-5">
+                  <p className="font-['IBM_Plex_Sans'] text-[0.625rem] font-medium uppercase tracking-[0.2em] text-[#A4A9AE]">
+                    Contractor
+                  </p>
+                  <p className="mt-2 font-['Archivo'] text-base font-bold text-[#2F3640]">
+                    {selectedProject.contractor}
+                  </p>
+                </div>
+              )}
+
+              {selectedProject.consultant && (
+                <div className="bg-[#F4F5F5] p-5">
+                  <p className="font-['IBM_Plex_Sans'] text-[0.625rem] font-medium uppercase tracking-[0.2em] text-[#A4A9AE]">
+                    Consultant
+                  </p>
+                  <p className="mt-2 font-['Archivo'] text-base font-bold text-[#2F3640]">
+                    {selectedProject.consultant}
+                  </p>
+                </div>
+              )}
+
+              {selectedProject.system && (
+                <div className="bg-[#F4F5F5] p-5">
+                  <p className="font-['IBM_Plex_Sans'] text-[0.625rem] font-medium uppercase tracking-[0.2em] text-[#A4A9AE]">
+                    System
+                  </p>
+                  <p className="mt-2 font-['Archivo'] text-base font-bold text-[#2F3640]">
+                    {selectedProject.system}
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>

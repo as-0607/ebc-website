@@ -6,6 +6,7 @@ const MARKERS = {
   Qatar: { x: 62, y: 55 },
   "United Arab Emirates": { x: 67, y: 57 },
   "Saudi Arabia": { x: 58, y: 60 },
+  KSA: { x: 58, y: 60 },
   Sudan: { x: 47, y: 70 },
   Djibouti: { x: 55, y: 78 },
   Italy: { x: 33, y: 28 },
@@ -158,6 +159,10 @@ export default function GlobalPresence() {
 
             {COUNTRIES.map((country, index) => {
               const marker = MARKERS[country.name];
+
+              if (!marker) {
+                return null;
+              }
 
               return (
                 <div

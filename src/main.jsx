@@ -8,8 +8,8 @@ import ScrollToTop from "./components/ScrollToTop.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter basename="/ebc-website">
-      <ScrollToTop />
-      <App />
+        <ScrollToTop />
+        <App />
     </BrowserRouter>
   </StrictMode>,
 );

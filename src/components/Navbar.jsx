@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const NAV = [
@@ -40,7 +40,7 @@ export default function Navbar({ overHero = false }) {
           : "border-white/10 bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-[74px] w-full max-w-[1400px] items-center justify-between px-6 md:px-10 lg:px-14">
+      <div className="mx-auto flex h-18.5 w-full max-w-350 items-center justify-between px-6 md:px-10 lg:px-14">
         {/* Logo */}
         <Link
           to="/"
@@ -48,7 +48,7 @@ export default function Navbar({ overHero = false }) {
           className="flex items-center gap-3"
         >
           {/* Red vertical line */}
-          <span className="mt-1 h-8 w-[3px] bg-[#E53935]" />
+          <span className="mt-1 h-8 w-0.75 bg-[#E53935]" />
 
           <div className="leading-none">
             <span
@@ -72,22 +72,21 @@ export default function Navbar({ overHero = false }) {
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-7 lg:flex">
           {NAV.map((item) => (
-            <Link
+            <NavLink
               key={item.to}
               to={item.to}
-              className={`text-[11px] font-semibold uppercase tracking-[0.12em] transition-colors duration-200 ${
-                solid
-                  ? "text-[#07131F]/70 hover:text-[#E53935]"
-                  : "text-white/85 hover:text-white"
-              }`}
-              activeProps={{
-                className: `text-[11px] font-semibold uppercase tracking-[0.12em] ${
-                  solid ? "text-[#E53935]" : "text-[#E53935]"
-                }`,
-              }}
+              className={({ isActive }) =>
+                `text-[11px] font-semibold uppercase tracking-[0.12em] transition-colors duration-200 ${
+                  isActive
+                    ? "text-[#E53935]"
+                    : solid
+                      ? "text-[#07131F]/70 hover:text-[#E53935]"
+                      : "text-white/85 hover:text-white"
+                }`
+              }
             >
               {item.label}
-            </Link>
+            </NavLink>
           ))}
         </nav>
 
@@ -107,25 +106,25 @@ export default function Navbar({ overHero = false }) {
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             onClick={() => setOpen((value) => !value)}
-            className={`flex h-10 w-10 flex-col items-center justify-center gap-[5px] lg:hidden ${
+            className={`flex h-10 w-10 flex-col items-center justify-center gap-1.25 lg:hidden ${
               solid ? "text-[#07131F]" : "text-white"
             }`}
           >
             <span
-              className={`h-[2px] w-5 bg-current transition-transform duration-300 ${
-                open ? "translate-y-[7px] rotate-45" : ""
+              className={`h-0.5 w-5 bg-current transition-transform duration-300 ${
+                open ? "translate-y-1.75 rotate-45" : ""
               }`}
             />
 
             <span
-              className={`h-[2px] w-5 bg-current transition-opacity duration-200 ${
+              className={`h-0.5 w-5 bg-current transition-opacity duration-200 ${
                 open ? "opacity-0" : ""
               }`}
             />
 
             <span
-              className={`h-[2px] w-5 bg-current transition-transform duration-300 ${
-                open ? "-translate-y-[7px] -rotate-45" : ""
+              className={`h-0.5 w-5 bg-current transition-transform duration-300 ${
+                open ? "-translate-y-1.75 -rotate-45" : ""
               }`}
             />
           </button>
@@ -137,18 +136,18 @@ export default function Navbar({ overHero = false }) {
         <div className="border-t border-gray-200 bg-white lg:hidden">
           <div className="mx-auto flex w-full max-w-7xl flex-col px-6 py-2">
             {NAV.map((item) => (
-              <Link
+              <NavLink
                 key={item.to}
                 to={item.to}
                 onClick={() => setOpen(false)}
-                className="border-b border-gray-200 py-4 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#07131F]/75 transition-colors hover:text-[#E53935]"
-                activeProps={{
-                  className:
-                    "border-b border-gray-200 py-4 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#E53935]",
-                }}
+                className={({ isActive }) =>
+                  `border-b border-gray-200 py-4 text-[11px] font-semibold uppercase tracking-[0.12em] transition-colors hover:text-[#E53935] ${
+                    isActive ? "text-[#E53935]" : "text-[#07131F]/75"
+                  }`
+                }
               >
                 {item.label}
-              </Link>
+              </NavLink>
             ))}
 
             {/* Mobile CTA */}

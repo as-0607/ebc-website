@@ -7,19 +7,19 @@ import Services from "../pages/Services";
 import Contact from "../pages/Contact";
 import Expertise from "../pages/Expertise";
 import GlobalPage from "../pages/GlobalPage";
-
+import NotFound from "../pages/NotFound";
 
 export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About standalone/>} />
-      <Route path="/expertise" element={<Expertise/>} />
+      <Route path="/about" element={<About standalone />} />
+      <Route path="/expertise" element={<Expertise />} />
       <Route path="/global-presence" element={<GlobalPage />} />
-      <Route path="/projects" element={<Projects/>} />
-      <Route path="/services" element={<Services/>} />
-      <Route path="/contact" element={<Contact/>} />
-      
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

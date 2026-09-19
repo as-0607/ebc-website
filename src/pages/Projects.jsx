@@ -7,10 +7,15 @@ import { PROJECTS } from "../data/ebc";
 
 const SECTORS = [
   "All",
-  "Banks",
-  "Educational",
   "Commercial & Administrative",
-  "Sporting Clubs",
+  "Nationalistic",
+  "Healthcare & Pharmaceutical",
+  "Industrial",
+  "Educational",
+  "Sports & Recreation",
+  "Infrastructure & Transportation",
+  "Hospitality & Residential",
+  "Culture & Recreation",
 ];
 
 export default function Projects() {
@@ -153,14 +158,31 @@ export default function Projects() {
                 onClick={() => setSelectedProject(project)}
                 className="group relative cursor-pointer overflow-hidden bg-[#2F3640]"
               >
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  loading="lazy"
-                  className="aspect-[4/3] w-full object-cover opacity-90 transition-all duration-700 group-hover:scale-105 group-hover:opacity-100"
-                />
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    loading="lazy"
+                    className="aspect-[4/3] w-full object-cover opacity-90 transition-all duration-700 group-hover:scale-105 group-hover:opacity-100"
+                  />
+                ) : (
+                  <div
+                    aria-hidden="true"
+                    className="flex aspect-[4/3] w-full items-center justify-center bg-[#F4F5F5]"
+                  >
+                    <span className="border border-[#C8102E]/30 px-4 py-2 font-['IBM_Plex_Sans'] text-[0.625rem] font-medium uppercase tracking-[0.22em] text-[#2F3640]/40">
+                      EBC Project Archive
+                    </span>
+                  </div>
+                )}
 
-                <div className="absolute inset-0 bg-gradient-to-t from-[#2F3640]/90 via-[#2F3640]/15 to-transparent" />
+                <div
+                  className={`absolute inset-0 ${
+                    project.image
+                      ? "bg-gradient-to-t from-[#2F3640]/90 via-[#2F3640]/15 to-transparent"
+                      : "bg-gradient-to-t from-[#F4F5F5] via-[#F4F5F5]/30 to-transparent"
+                  }`}
+                />
 
                 <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5">
                   <div>
@@ -168,14 +190,20 @@ export default function Projects() {
                       {project.country} · {project.sector}
                     </span>
 
-                    <h2 className="mt-2 font-['Archivo'] text-lg font-bold leading-tight tracking-[-0.025em] text-white">
+                    <h2
+                      className={`mt-2 font-['Archivo'] text-lg font-bold leading-tight tracking-[-0.025em] ${
+                        project.image ? "text-white" : "text-[#2F3640]"
+                      }`}
+                    >
                       {project.name}
                     </h2>
                   </div>
 
                   <span
                     aria-hidden
-                    className="mb-1 translate-x-2 text-xl text-white opacity-0 transition-all duration-500 group-hover:translate-x-0 group-hover:opacity-100"
+                    className={`mb-1 translate-x-2 text-xl opacity-0 transition-all duration-500 group-hover:translate-x-0 group-hover:opacity-100 ${
+                      project.image ? "text-white" : "text-[#2F3640]"
+                    }`}
                   >
                     →
                   </span>
@@ -248,11 +276,22 @@ export default function Projects() {
 
             {/* Image */}
             <div className="relative">
-              <img
-                src={selectedProject.image}
-                alt={selectedProject.name}
-                className="max-h-[55vh] w-full object-cover"
-              />
+              {selectedProject.image ? (
+                <img
+                  src={selectedProject.image}
+                  alt={selectedProject.name}
+                  className="max-h-[55vh] w-full object-cover"
+                />
+              ) : (
+                <div
+                  aria-hidden="true"
+                  className="flex aspect-[4/3] max-h-[55vh] w-full items-center justify-center bg-[#F4F5F5]"
+                >
+                  <span className="border border-[#C8102E]/30 px-5 py-3 font-['IBM_Plex_Sans'] text-[0.6875rem] font-medium uppercase tracking-[0.22em] text-[#2F3640]/40">
+                    EBC Project Archive
+                  </span>
+                </div>
+              )}
 
               <span className="absolute bottom-0 left-0 bg-[#C8102E] px-5 py-3 font-['IBM_Plex_Sans'] text-[0.6875rem] font-medium uppercase tracking-[0.18em] text-white">
                 {selectedProject.country}

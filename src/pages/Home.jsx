@@ -4,6 +4,7 @@ import  CredibilityStrip from "../components/home/CredibilityStrip";
 import  OwnerSection  from "../components/home/OwnerSection";
 import  WhatEbcDoes  from "../components/home/WhatEbcDoes";
 import  FeaturedProjects  from "../components/home/FeaturedProjects";
+import NewsSection from "../components/home/NewsSection";
 import  TechnicalExpertise  from "../components/home/TechnicalExpertise";
 import  StatementBand  from "../components/home/StatementBand";
 import  GlobalPresence  from "../components/home/GlobalPresence";
@@ -21,6 +22,7 @@ export default function Home() {
         <OwnerSection />
         <WhatEbcDoes />
         <FeaturedProjects/>
+        <NewsSection/>
         <TechnicalExpertise/>
         <StatementBand/>
         <GlobalPresence/>

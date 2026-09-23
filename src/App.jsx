@@ -1,8 +1,8 @@
 import AppRoutes from "./routes/AppRoutes";
-// import Navbar from "./components/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { AuthProvider } from "./context/AuthContext";
 
 export default function App() {
   useEffect(() => {
@@ -11,10 +11,10 @@ export default function App() {
       once: true,
     });
   }, []);
+
   return (
-    <>
-      {/* <Navbar /> */}
+    <AuthProvider>
       <AppRoutes />
-    </>
+    </AuthProvider>
   );
 }

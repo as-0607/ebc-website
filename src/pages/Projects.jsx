@@ -4,25 +4,21 @@ import SiteFooter from "../components/SiteFooter";
 import PageHeader from "../components/PageHeader";
 import CTASection from "../components/CTASection";
 import { PROJECTS } from "../data/ebc";
+import { PROJECT_SECTORS } from "../data/projectOptions";
+import { fetchProjects } from "../utils/projects";
 
-const SECTORS = [
-  "All",
-  "Commercial & Administrative",
-  "Nationalistic",
-  "Healthcare & Pharmaceutical",
-  "Industrial",
-  "Educational",
-  "Sports & Recreation",
-  "Infrastructure & Transportation",
-  "Hospitality & Residential",
-  "Culture & Recreation",
-];
+const SECTORS = ["All", ...PROJECT_SECTORS];
 
 export default function Projects() {
+  const [projects, setProjects] = useState(PROJECTS);
   const [country, setCountry] = useState("All");
   const [sector, setSector] = useState("All");
   const [visibleCount, setVisibleCount] = useState(9);
   const [selectedProject, setSelectedProject] = useState(null);
+
+  useEffect(() => {
+    fetchProjects().then(setProjects);
+  }, []);
 
   // Close modal with Escape
   useEffect(() => {
@@ -53,14 +49,14 @@ export default function Projects() {
   }, [selectedProject]);
 
   const list = useMemo(() => {
-    return PROJECTS.filter((project) => {
+    return projects.filter((project) => {
       const countryMatch = country === "All" || project.country === country;
 
       const sectorMatch = sector === "All" || project.sector === sector;
 
       return countryMatch && sectorMatch;
     });
-  }, [country, sector]);
+  }, [country, projects, sector]);
 
   const handleCountryChange = (value) => {
     setCountry(value);
@@ -83,7 +79,7 @@ export default function Projects() {
       <main>
         <PageHeader
           label="03 / Projects"
-          meta={`${PROJECTS.length} PROJECTS · 8 COUNTRIES`}
+          meta={`${projects.length} PROJECTS · 8 COUNTRIES`}
           title="A PORTFOLIO OF COMPLEX BUILDINGS."
           intro="A selection of projects from the EBC-International archive. Every project is delivered by qualified engineers working to recognized codes of practice."
           image="https://theebc-eg.com/wp-content/uploads/2023/01/Alexandria-Stadium.webp"
@@ -152,7 +148,7 @@ export default function Projects() {
           <div className="mx-auto grid w-full max-w-[88rem] gap-6 px-5 sm:grid-cols-2 md:px-10 lg:grid-cols-3 xl:px-14">
             {visibleProjects.map((project, index) => (
               <article
-                key={project.name}
+                key={project.id ?? project.name}
                 data-aos="fade-up"
                 data-aos-delay={(index % 3) * 80}
                 onClick={() => setSelectedProject(project)}

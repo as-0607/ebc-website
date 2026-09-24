@@ -10,6 +10,8 @@ const MARKERS = {
   Sudan: { x: 47, y: 70 },
   Djibouti: { x: 55, y: 78 },
   Italy: { x: 33, y: 28 },
+  Tanzania: { x: 58, y: 90 },
+  Gambia: { x: 10, y: 70 },
 };
 
 export default function GlobalPresence() {

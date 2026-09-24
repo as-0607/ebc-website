@@ -60,7 +60,7 @@ export default function StatementBand() {
   }, []);
 
   const projects = useCountUp(87, run);
-  const countries = useCountUp(8, run);
+  const countries = useCountUp(9, run);
   const year = useCountUp(2011, run, 1600);
 
   const stats = [

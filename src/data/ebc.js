@@ -2,34 +2,30 @@ export const HERO_SLIDES = [
   {
     id: 1,
     label: "01 / COMMISSIONING",
-    title: ["ENGINEERING CERTAINTY", "FOR COMPLEX BUILDINGS"],
+    title: ["SYSTEM","PERFORMANCE,", "PROVEN BY DATA."],
     text: "Independent commissioning and technical verification for complex building systems, supporting projects from design review through performance verification.",
-    image:
-      "https://theebc-eg.com/wp-content/uploads/2023/01/City-of-Science-Technology-768x599.jpg",
+    image: `${import.meta.env.BASE_URL}/images/slider/slider1.jpg`,
   },
   {
     id: 2,
     label: "02 / TESTING",
     title: ["MEASURE.", "TEST.", "VERIFY."],
     text: "Specialized testing across HVAC, electrical systems, ductwork and building performance, supported by professional measurement and testing instrumentation.",
-    image:
-      "https://theebc-eg.com/wp-content/uploads/2020/10/IMG_6072-768x512.jpg",
+    image: `${import.meta.env.BASE_URL}/images/slider/slider2.jpg`,
   },
   {
     id: 3,
     label: "03 / VALIDATION",
-    title: ["SYSTEM PERFORMANCE,", "PROVEN BY DATA."],
+    title: ["SYSTEM","PERFORMANCE,", "PROVEN BY DATA."],
     text: "MEP systems validation, functional performance testing and documented verification to confirm systems operate in accordance with project requirements.",
-    image:
-      "https://theebc-eg.com/wp-content/uploads/2020/09/1517722d-c046-46b7-8ba7-7aa8c1ce0b5e-768x576.jpg",
+    image: `${import.meta.env.BASE_URL}/images/slider/slider3.jpg`,
   },
   {
     id: 4,
     label: "04 / SPECIALIZED TESTING",
     title: ["PRECISION FOR", "CRITICAL ENVIRONMENTS."],
     text: "Specialized services including cleanroom validation, building envelope testing, duct air leakage testing and enclosure integrity testing.",
-    image:
-      "https://theebc-eg.com/wp-content/uploads/2020/08/20140122_101704-768x576.jpg",
+    image: `${import.meta.env.BASE_URL}/images/slider/slider4.jpeg`,
   },
 ];
 export const credibility = [
@@ -47,6 +43,8 @@ export const COUNTRIES = [
   { name: "Sudan", note: "" },
   { name: "Djibouti", note: "" },
   { name: "Italy", note: "" },
+  { name: "Tanzania", note: "" },
+  { name: "Gambia", note: "" },
 ];
 export const STANDARDS = [
   {

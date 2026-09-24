@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
+import logo from "../assets/ebc-logo.png";
 
 const NAV = [
   { to: "/about", label: "About" },
@@ -45,28 +46,9 @@ export default function Navbar({ overHero = false }) {
         <Link
           to="/"
           onClick={() => setOpen(false)}
-          className="flex items-center gap-3"
+          className="flex items-center"
         >
-          {/* Red vertical line */}
-          <span className="mt-1 h-8 w-0.75 bg-[#E53935]" />
-
-          <div className="leading-none">
-            <span
-              className={`block text-xl font-extrabold tracking-tight ${
-                solid ? "text-[#07131F]" : "text-white"
-              }`}
-            >
-              EBC
-            </span>
-
-            <span
-              className={` block text-[9px] font-semibold uppercase tracking-[0.18em] ${
-                solid ? "text-gray-500" : "text-white/70"
-              }`}
-            >
-              International
-            </span>
-          </div>
+          <img src={logo} alt="EBC International" className="h-34 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}

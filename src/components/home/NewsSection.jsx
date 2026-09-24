@@ -14,6 +14,7 @@ const formatDate = (value) => {
 
 export default function NewsSection() {
   const [news, setNews] = useState([]);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     fetchNews().then(setNews);
@@ -38,8 +39,37 @@ export default function NewsSection() {
           </h2>
         </div>
 
-        <div className="mt-14 grid gap-4">
-          {news.slice(0, 3).map((item) => {
+        <div className="mt-14">
+          <div className="mb-4 flex justify-end gap-2">
+            <button
+              type="button"
+              aria-label="Previous news"
+              onClick={() => setActiveIndex((index) => Math.max(0, index - 1))}
+              disabled={activeIndex === 0}
+              className="flex h-11 w-11 items-center justify-center border border-white/20 text-white transition-colors hover:border-[#E53935] hover:bg-[#E53935] disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+            </button>
+            <button
+              type="button"
+              aria-label="Next news"
+              onClick={() => setActiveIndex((index) => Math.min(news.length - 1, index + 1))}
+              disabled={activeIndex >= news.length - 1}
+              className="flex h-11 w-11 items-center justify-center border border-white/20 text-white transition-colors hover:border-[#E53935] hover:bg-[#E53935] disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+          <div className="overflow-hidden">
+            <div
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+            >
+          {news.map((item) => {
             const content = (
               <div className="flex min-h-52 flex-col bg-[#102330] sm:flex-row">
                 <div
@@ -68,8 +98,10 @@ export default function NewsSection() {
               </div>
             );
 
-            return <article key={item.id} className="group overflow-hidden">{content}</article>;
+            return <article key={item.id} className="group w-full shrink-0 overflow-hidden">{content}</article>;
           })}
+            </div>
+          </div>
         </div>
       </div>
     </section>

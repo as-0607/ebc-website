@@ -126,7 +126,7 @@ export default function SiteFooter() {
         </p>
 
         <p className="font-['IBM_Plex_Sans'] text-xs font-medium uppercase tracking-[0.12em] text-white/40">
-          Measure. Verify. Perform.
+          WE ARE THE COMMISISONING
         </p>
       </div>
     </footer>

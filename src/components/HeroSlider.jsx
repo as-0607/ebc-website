@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { HERO_SLIDES } from "../data/ebc";
 
-const DURATION = 7000;
+const DURATION = 4000;
 
 export default function HeroSlider() {
   const [current, setCurrent] = useState(0);
@@ -50,7 +50,6 @@ export default function HeroSlider() {
 
   return (
     <section className="relative min-h-[78vh] overflow-hidden bg-[#07131F] text-white md:min-h-[82vh]">
-
       {/* =========================
           BACKGROUND SLIDES
       ========================== */}
@@ -59,9 +58,7 @@ export default function HeroSlider() {
         <div
           key={item.id}
           className={`absolute inset-0 transition-opacity duration-[1200ms] ease-in-out ${
-            index === current
-              ? "opacity-100"
-              : "pointer-events-none opacity-0"
+            index === current ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
         >
           <img
@@ -101,27 +98,19 @@ export default function HeroSlider() {
       ========================== */}
 
       <div className="relative mx-auto flex min-h-[78vh] max-w-[1400px] flex-col justify-end px-6 pb-12 pt-28 md:min-h-[82vh] md:px-10 md:pb-14 lg:px-14">
-
         {/* Technical top information */}
 
         <div className="mb-auto hidden items-center gap-4 pt-8 md:flex">
-
           <span className="h-px w-16 bg-[#E53935]" />
 
           <span className="text-[11px] font-semibold tracking-[0.18em] text-white/70">
-            EBC / INDEPENDENT BUILDING COMMISSIONING
+            EBC / ELITE BUILDING COMMISSIONING
           </span>
-
-          <span className="ml-auto text-[11px] font-semibold tracking-[0.18em] text-white/40">
-            MEP · TAB · ELECTRICAL · CLEANROOM
-          </span>
-
         </div>
 
         {/* Main content */}
 
         <div className="max-w-4xl">
-
           {/* Label */}
 
           <p
@@ -135,7 +124,7 @@ export default function HeroSlider() {
 
           <h1
             key={`title-${current}`}
-            className="mt-5 text-[clamp(2.75rem,7vw,6rem)] font-bold leading-[0.95] tracking-[-0.03em] animate-in fade-in slide-in-from-bottom-4 duration-700 "
+            className="mt-5 text-[clamp(2.75rem,6vw,4.8rem)] font-bold leading-[0.95] tracking-[-0.03em] animate-in fade-in slide-in-from-bottom-4 duration-700 "
           >
             {slide.title.map((line) => (
               <span key={line} className="block">
@@ -156,13 +145,11 @@ export default function HeroSlider() {
           {/* Buttons */}
 
           <div className="mt-8 flex flex-wrap gap-3">
-
             <Link
               to="/services"
               className="group inline-flex items-center gap-3 bg-[#E53935] px-6 py-4 text-xs font-bold tracking-[0.12em] text-white transition-all duration-300 hover:bg-[#C92F2B]"
             >
               EXPLORE OUR SERVICES
-
               <span className="transition-transform duration-300 group-hover:translate-x-1">
                 →
               </span>
@@ -173,14 +160,11 @@ export default function HeroSlider() {
               className="group inline-flex items-center gap-3 border border-white/35 px-6 py-4 text-xs font-bold tracking-[0.12em] text-white transition-all duration-300 hover:border-white hover:bg-white/10"
             >
               VIEW PROJECTS
-
               <span className="transition-transform duration-300 group-hover:translate-x-1">
                 →
               </span>
             </Link>
-
           </div>
-
         </div>
 
         {/* =========================
@@ -188,11 +172,9 @@ export default function HeroSlider() {
         ========================== */}
 
         <div className="mt-12 flex items-end gap-5">
-
           {/* Number */}
 
           <div className="shrink-0 text-sm font-semibold tracking-[0.15em]">
-
             <span className="text-white">
               {String(current + 1).padStart(2, "0")}
             </span>
@@ -201,15 +183,12 @@ export default function HeroSlider() {
               {" "}
               / {String(HERO_SLIDES.length).padStart(2, "0")}
             </span>
-
           </div>
 
           {/* Progress bars */}
 
           <div className="flex flex-1 gap-2">
-
             {HERO_SLIDES.map((item, index) => (
-
               <button
                 key={item.id}
                 type="button"
@@ -217,7 +196,6 @@ export default function HeroSlider() {
                 onClick={() => goToSlide(index)}
                 className="group relative h-[2px] flex-1 overflow-hidden bg-white/25"
               >
-
                 <span
                   className="absolute inset-y-0 left-0 bg-[#E53935]"
                   style={{
@@ -225,19 +203,14 @@ export default function HeroSlider() {
                       index === current
                         ? `${progress * 100}%`
                         : index < current
-                        ? "100%"
-                        : "0%",
+                          ? "100%"
+                          : "0%",
                   }}
                 />
-
               </button>
-
             ))}
-
           </div>
-
         </div>
-
       </div>
     </section>
   );

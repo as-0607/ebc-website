@@ -86,12 +86,12 @@ export default function FeaturedProjects() {
             <div className="flex items-center gap-4">
               <span className="h-px w-12 bg-[#E53935]" />
 
-              <span className="font-['IBM_Plex_Sans'] text-[0.6875rem] font-medium uppercase leading-[1.2] tracking-[0.22em] text-[#E53935]">
-                04 / Selected Projects
+              <span className="font-['IBM_Plex_Sans'] text-[0.85rem] font-medium uppercase leading-[1.2] tracking-[0.22em] text-[#E53935]">
+                Selected Projects
               </span>
             </div>
 
-            <h2 className="mt-6 font-['Archivo'] text-[clamp(2rem,4.2vw,4rem)] font-bold leading-[1.02] tracking-[-0.025em] text-[#07131F]">
+            <h2 className="mt-6 font-['Archivo'] text-[clamp(2rem,4vw,3rem)] font-bold leading-[1.02] tracking-[-0.025em] text-[#07131F]">
               COMPLEX BUILDINGS. VERIFIED.
             </h2>
           </div>

@@ -29,7 +29,7 @@ export const HERO_SLIDES = [
   },
 ];
 export const credibility = [
-  ["CERTIFICATION", "NEBB CERTIFIED"],
+  ["CERTIFICATION", "NEBB,CSA,LEED,ISO CERTIFIED"],
   ["EXPERIENCE", "SINCE 2011"],
   ["PRESENCE", "INTERNATIONAL"],
   ["EXPERTISE", "WHOLE BUILDING COMMISSIONING"],
@@ -143,11 +143,11 @@ export const steps = [
 export const SITE = {
   name: "EBC-International",
   tagline: "Elite Building Commissioning",
-  email: "Info@theebc-eg.com",
-  telephone: "0226716964",
+  email: "info@theebc-eg.com",
+  telephone: "+201024608575",
   mobile: "00201004109006",
   since: "2011",
-  countries: "8",
+  countries: "9",
   projectsCount: "87+",
 };
 export const MISSION_POINTS = [
@@ -329,7 +329,7 @@ export const PROJECTS = [
     country: "Egypt",
     location: "Alamain",
     sector: "Educational",
-    contractor: "Kortech CCC Total Air",
+    contractor: "",
     consultant: "ECG",
     system: "Testing & Balancing",
   },

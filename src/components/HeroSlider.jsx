@@ -103,7 +103,7 @@ export default function HeroSlider() {
         <div className="mb-auto hidden items-center gap-4 pt-8 md:flex">
           <span className="h-px w-16 bg-[#E53935]" />
 
-          <span className="text-[11px] font-semibold tracking-[0.18em] text-white/70">
+          <span className="text-[0.85rem] font-semibold tracking-[0.18em] text-white/70">
             EBC / ELITE BUILDING COMMISSIONING
           </span>
         </div>
@@ -155,15 +155,15 @@ export default function HeroSlider() {
               </span>
             </Link>
 
-            <Link
-              to="/projects"
+            <a
+              href="#news"
               className="group inline-flex items-center gap-3 border border-white/35 px-6 py-4 text-xs font-bold tracking-[0.12em] text-white transition-all duration-300 hover:border-white hover:bg-white/10"
             >
-              VIEW PROJECTS
+              NEWS & INSIGHTS
               <span className="transition-transform duration-300 group-hover:translate-x-1">
                 →
               </span>
-            </Link>
+            </a>
           </div>
         </div>
 

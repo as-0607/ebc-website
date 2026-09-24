@@ -101,7 +101,7 @@ export default function StatementBand() {
         <p
           data-aos="fade-up"
           data-aos-once="true"
-          className="font-['IBM_Plex_Sans'] text-[0.6875rem] font-medium uppercase leading-[1.2] tracking-[0.22em] text-[#E53935]"
+          className="font-['IBM_Plex_Sans'] text-[0.85rem] font-medium uppercase leading-[1.2] tracking-[0.22em] text-[#E53935]"
         >
           Measure. Verify. Perform.
         </p>
@@ -111,7 +111,7 @@ export default function StatementBand() {
           data-aos="fade-up"
           data-aos-delay="100"
           data-aos-once="true"
-          className="mt-6 max-w-4xl font-['Archivo'] text-[clamp(2rem,4.2vw,4rem)] font-bold leading-[1.02] tracking-[-0.025em]"
+          className="mt-6 max-w-4xl font-['Archivo'] text-[clamp(2rem,4vw,3rem)] font-bold leading-[1.02] tracking-[-0.025em]"
         >
           EBC DOES NOT INSTALL YOUR SYSTEMS.
           <br />

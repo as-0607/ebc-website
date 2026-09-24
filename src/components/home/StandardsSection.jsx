@@ -9,12 +9,12 @@ export default function StandardsSection() {
           <div className="flex items-center gap-4">
             <span className="h-px w-12 bg-[#ef3e37]" />
 
-            <span className="font-['IBM_Plex_Sans'] text-xs font-medium uppercase tracking-[0.12em] text-[#ef3e37]">
-              07 / Standards
+            <span className="font-['IBM_Plex_Sans'] text-[0.85rem] font-medium uppercase tracking-[0.12em] text-[#ef3e37]">
+              Standards
             </span>
           </div>
 
-          <h2 className="mt-6 font-['Archivo'] text-4xl font-extrabold uppercase leading-[0.95] tracking-[-0.03em] text-[#111111] sm:text-5xl lg:text-6xl">
+          <h2 className="mt-6 font-['Archivo'] text-[clamp(2rem,4vw,3rem)] font-extrabold uppercase leading-[0.95] tracking-[-0.03em] text-[#111111] sm:text-5xl lg:text-6xl">
             STANDARDS
             <br />
             THAT DEFINE

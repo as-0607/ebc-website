@@ -24,7 +24,7 @@ export default function SiteFooter() {
           <p className="mt-6 max-w-md font-['IBM_Plex_Sans'] text-sm leading-6 text-white/70">
             A NEBB certified TAB and commissioning provider serving the Egyptian
             market and the MENA region, with a portfolio of projects stretching
-            over 8 countries and of various scales.
+            over 9 countries and of various scales.
           </p>
 
           {/* Standards */}
@@ -88,10 +88,24 @@ export default function SiteFooter() {
               </a>
             </li>
 
-            {/* Telephone */}
+            {/* Telephone KSA */}
             <li>
               <span className="block font-['IBM_Plex_Sans'] text-[0.625rem] font-medium uppercase tracking-[0.12em] text-white/40">
-                Telephone
+                Telephone KSA
+              </span>
+
+              <a
+                href={`tel:+966 53 231 7145 `}
+                className="transition-colors duration-300 hover:text-white"
+              >
+                +966532317145
+              </a>
+            </li>
+
+            {/* Telephone EGY*/}
+            <li>
+              <span className="block font-['IBM_Plex_Sans'] text-[0.625rem] font-medium uppercase tracking-[0.12em] text-white/40">
+                Telephone EGY
               </span>
 
               <a
@@ -99,20 +113,6 @@ export default function SiteFooter() {
                 className="transition-colors duration-300 hover:text-white"
               >
                 {SITE.telephone}
-              </a>
-            </li>
-
-            {/* Mobile */}
-            <li>
-              <span className="block font-['IBM_Plex_Sans'] text-[0.625rem] font-medium uppercase tracking-[0.12em] text-white/40">
-                Mobile
-              </span>
-
-              <a
-                href={`tel:${SITE.mobile}`}
-                className="transition-colors duration-300 hover:text-white"
-              >
-                {SITE.mobile}
               </a>
             </li>
           </ul>

@@ -34,31 +34,31 @@ export default function WhatEbcDoes() {
             <div className="flex items-center gap-4">
               <span className="h-px w-12 bg-[#E53935]" />
 
-              <span className="font-['IBM_Plex_Sans'] text-[0.6875rem] font-medium uppercase leading-[1.2] tracking-[0.22em] text-[#E53935]">
-                03 / What EBC Does
+              <span className="font-['IBM_Plex_Sans'] text-[0.85rem] font-medium uppercase leading-[1.2] tracking-[0.22em] text-[#E53935]">
+                What EBC Does
               </span>
             </div>
 
-            <h2 className="mt-6 font-['Archivo'] text-[clamp(2rem,4.2vw,4rem)] font-bold leading-[1.02] tracking-[-0.025em]">
-              FROM STATIC COMPLETION
-              <br />
-              TO VERIFIED PERFORMANCE.
+            <h2 className="mt-6 font-['Archivo'] text-[clamp(2rem,4vw,3rem)] font-bold leading-[1.02] tracking-[-0.025em]">
+              FROM STATIC <br />COMPLETION
+              
+              TO<br /> VERIFIED PERFORMANCE.
             </h2>
           </div>
 
-          <div
+          {/* <div
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-once="true"
             className="lg:col-span-5"
           >
-            <p className="text-white/70">
-              The advancement of an installation from static completion to full
-              working order to the specified requirement, the setting to work of
-              an installation, the regulation of the system and the fine tuning
-              of the system.
-            </p>
-          </div>
+            <img
+              src={`${import.meta.env.BASE_URL}/images/why.jpeg`}
+              alt="EBC commissioning engineers at work"
+              className="h-36 w-full object-cover sm:h-44 lg:h-40"
+              loading="lazy"
+            />
+          </div> */}
         </div>
 
         {/* Steps */}

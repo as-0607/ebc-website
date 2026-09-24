@@ -23,16 +23,16 @@ export default function NewsSection() {
   if (news.length === 0) return null;
 
   return (
-    <section className="bg-[#07131F] py-20 lg:py-28">
+    <section id="news" className="scroll-mt-20 bg-[#07131F] py-20 lg:py-28">
       <div className="mx-auto w-full max-w-[88rem] px-5 md:px-10 xl:px-14">
         <div data-aos="fade-up" data-aos-once="true" className="max-w-3xl">
           <div className="flex items-center gap-4">
             <span className="h-px w-12 bg-[#E53935]" />
-            <span className="font-['IBM_Plex_Sans'] text-[0.6875rem] font-medium uppercase tracking-[0.22em] text-[#E53935]">
-              05 / Company News
+            <span className="font-['IBM_Plex_Sans'] text-[0.85rem] font-medium uppercase tracking-[0.22em] text-[#E53935]">
+              Company News
             </span>
           </div>
-          <h2 className="mt-6 font-['Archivo'] text-[clamp(2rem,4.2vw,4rem)] font-bold leading-[1.02] tracking-[-0.025em] text-white">
+          <h2 className="mt-6 font-['Archivo'] text-[clamp(2rem,4vw,3rem)] font-bold leading-[1.02] tracking-[-0.025em] text-white">
             FROM EBC.
             <br />
             ON THE GROUND.

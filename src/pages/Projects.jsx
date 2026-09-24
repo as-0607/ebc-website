@@ -79,7 +79,7 @@ export default function Projects() {
       <main>
         <PageHeader
           label="03 / Projects"
-          meta={`${projects.length} PROJECTS · 8 COUNTRIES`}
+          meta={`${projects.length} PROJECTS · 9 COUNTRIES`}
           title="A PORTFOLIO OF COMPLEX BUILDINGS."
           intro="A selection of projects from the EBC-International archive. Every project is delivered by qualified engineers working to recognized codes of practice."
           image="https://theebc-eg.com/wp-content/uploads/2023/01/Alexandria-Stadium.webp"

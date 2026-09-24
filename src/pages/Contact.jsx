@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useForm } from "@formspree/react";
 import Navbar from "../components/Navbar";
 import SiteFooter from "../components/SiteFooter";
@@ -9,6 +10,22 @@ const FIELD =
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xdeonkoj");
+  const [selectedOffice, setSelectedOffice] = useState("ksa");
+  const office = selectedOffice === "ksa"
+    ? {
+        label: "KSA Office",
+        location: "Riyadh, Saudi Arabia",
+        phones: ["+966532317145 "],
+        email: "omnia.medhat@theebc-eg.com",
+        hours: "Sunday - Thursday, 08:00 - 17:00 AST",
+      }
+    : {
+        label: "Egypt Office",
+        location: "Cairo, Egypt",
+        phones: [SITE.telephone, SITE.mobile],
+        email: SITE.email,
+        hours: "Sunday - Thursday, 08:00 - 17:00 EET",
+      };
 
   return (
     <>
@@ -175,11 +192,25 @@ export default function Contact() {
               data-aos-once="true"
             >
               <div className="bg-[#07131F] p-8 text-white">
-                <span className="font-['IBM_Plex_Sans'] text-[0.6875rem] font-medium leading-[1.2] tracking-[0.22em] uppercase text-[#E53935]">
-                  Head Office
+                <label className="block">
+                  <span className="font-['IBM_Plex_Sans'] text-[0.6875rem] font-medium leading-[1.2] tracking-[0.22em] uppercase text-[#E53935]">
+                    Select office
+                  </span>
+                  <select
+                    value={selectedOffice}
+                    onChange={(event) => setSelectedOffice(event.target.value)}
+                    className="mt-3 w-full border border-white/20 bg-[#102330] px-4 py-3 text-sm text-white outline-none focus:border-[#E53935]"
+                  >
+                    <option value="egypt">Egypt</option>
+                    <option value="ksa">Saudi Arabia (KSA)</option>
+                  </select>
+                </label>
+
+                <span className="mt-6 block font-['IBM_Plex_Sans'] text-[0.6875rem] font-medium leading-[1.2] tracking-[0.22em] uppercase text-[#E53935]">
+                  {office.label}
                 </span>
 
-                <p className="mt-5 text-white/80">Cairo, Egypt</p>
+                <p className="mt-5 text-white/80">{office.location}</p>
 
                 <dl className="mt-8 space-y-4 border-t border-white/10 pt-6">
                   {/* Phone */}
@@ -189,19 +220,15 @@ export default function Contact() {
                     </dt>
 
                     <dd className="mt-1">
-                      <a
-                        href={`tel:${SITE.telephone}`}
-                        className="block transition-colors hover:text-[#E53935]"
-                      >
-                        {SITE.telephone}
-                      </a>
-
-                      <a
-                        href={`tel:${SITE.mobile}`}
-                        className="block transition-colors hover:text-[#E53935]"
-                      >
-                        {SITE.mobile}
-                      </a>
+                      {office.phones.map((phone) => (
+                        <a
+                          key={phone}
+                          href={`tel:${phone}`}
+                          className="block transition-colors hover:text-[#E53935]"
+                        >
+                          {phone}
+                        </a>
+                      ))}
                     </dd>
                   </div>
 
@@ -213,10 +240,10 @@ export default function Contact() {
 
                     <dd className="mt-1">
                       <a
-                        href={`mailto:${SITE.email}`}
+                        href={`mailto:${office.email}`}
                         className="transition-colors hover:text-[#E53935]"
                       >
-                        {SITE.email}
+                        {office.email}
                       </a>
                     </dd>
                   </div>
@@ -228,7 +255,7 @@ export default function Contact() {
                     </dt>
 
                     <dd className="mt-1 text-white/80">
-                      Sunday – Thursday, 09:00 – 17:00 EET
+                      {office.hours}
                     </dd>
                   </div>
                 </dl>

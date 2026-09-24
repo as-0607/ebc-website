@@ -59,13 +59,13 @@ export default function GlobalPresence() {
                 color: "oklch(0.6083 0.209 27.03)",
                 fontFamily:
                   '"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif',
-                fontSize: "0.6875rem",
+                fontSize: "0.85rem",
                 letterSpacing: "0.22em",
                 fontWeight: 500,
                 lineHeight: 1.2,
               }}
             >
-              06 / Global Presence
+              Global Presence
             </span>
           </div>
 
@@ -76,7 +76,7 @@ export default function GlobalPresence() {
               fontWeight: 700,
               letterSpacing: "-0.025em",
               lineHeight: 1.02,
-              fontSize: "clamp(2rem, 4.2vw, 4rem)",
+              fontSize: "clamp(2rem,4vw,3rem)",
               textWrap: "balance",
             }}
           >

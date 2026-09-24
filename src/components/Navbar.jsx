@@ -48,7 +48,7 @@ export default function Navbar({ overHero = false }) {
           onClick={() => setOpen(false)}
           className="flex items-center"
         >
-          <img src={logo} alt="EBC International" className="h-34 w-auto" />
+          <img src={logo} alt="EBC International" className="h-16 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}

@@ -4,7 +4,6 @@ import PageHeader from "../components/PageHeader";
 import CTASection from "../components/CTASection";
 import { MISSION_POINTS } from "../data/ebc";
 import { PRINCIPLES } from "../data/ebc";
-import { TIMELINE } from "../data/ebc";
 
 export default function About() {
   return (
@@ -13,11 +12,11 @@ export default function About() {
 
       <main>
         <PageHeader
-          label="01 / About Us"
-          meta="EBC / SINCE 2011"
-          title="A LEADING PROVIDER OF TESTING & COMMISSIONING SERVICES."
-          intro="EBC-International is a leading provider of Testing & Commissioning services to the Egyptian market and MENA region, with a history of providing premier services dating back to 2011."
-          image="https://theebc-eg.com/wp-content/uploads/2020/09/8b66f42e-4d80-4d01-b47c-b7b0fac1526a-e1620393616232-768x839.jpg"
+          label="About Us"
+          meta="We test it, document it and make it simple"
+          title="AN ESTABLISHED LEADER IN MEP COMMISSIONING MANAGEMENT."
+          intro="EBC-International is an established company with a strong presence across the Middle East and a long-standing track record across complex building projects. Our expertise spans MEP Commissioning Management, supported by extensive project experience technical capability and a deep understanding of building systems. Our commitment to quality helps clients achieve reliable, efficient and performance-driven building systems."
+          image={`${import.meta.env.BASE_URL}/images/headers/about.jpeg`}
         />
 
         {/* Story */}
@@ -30,75 +29,47 @@ export default function About() {
               className="lg:col-span-5"
             >
               <img
-                src="https://theebc-eg.com/wp-content/uploads/2020/09/8b66f42e-4d80-4d01-b47c-b7b0fac1526a-e1620393616232-768x839.jpg"
+                src={`${import.meta.env.BASE_URL}/images/headers/about.jpeg`}
                 alt="The EBC-International team"
                 loading="lazy"
                 className="aspect-[3/4] w-full object-cover"
               />
-
-              <p className="mt-4 font-mono text-[0.75rem] uppercase tracking-[0.15em] text-[#7A8087]">
-                EBC / TEAM
-              </p>
             </div>
 
             {/* Content */}
             <div className="lg:col-span-7">
               <div data-aos="fade-up" data-aos-once="true">
-                <span className=" text-[0.75rem] font-medium uppercase tracking-[0.15em] text-[#EF3E37]">
-                  Our Story
+                <span className=" text-[0.85rem] font-medium uppercase tracking-[0.15em] text-[#EF3E37]">
+                  Our Vision
                 </span>
 
                 <h2 className="mt-5 max-w-2xl text-[clamp(2rem,4.4vw,4.6rem)] font-bold uppercase leading-[0.95] tracking-[-0.04em] text-[#0B0F14]">
-                  WE DO NOT ONLY ENVISION THE FUTURE. WE BUILD IT.
+                  BUILT ON EXPERIENCE. TRUSTED FOR PERFORMANCE.
                 </h2>
 
                 <div className="mt-7 space-y-5 text-lg leading-relaxed text-[#0B0F14]/70">
                   <p>
-                    From our local beginnings over 10 years ago to our vast
-                    international presence today, EBC has enjoyed continuous
-                    growth and enrichment of service offerings.
+                    EBC-International has built its reputation through years of
+                    experience across complex projects in the Middle East,
+                    continuously strengthening its technical capabilities and
+                    expanding its expertise.
                   </p>
 
                   <p>
-                    Every milestone reached has enabled us to better fulfill our
-                    purpose of preparing our communities and environment for the
-                    future.
+                    Our experience shapes the way we work — bringing knowledge,
+                    discipline and practical understanding to every project,
+                    while maintaining a consistent commitment to quality and
+                    performance.
                   </p>
 
                   <p>
-                    Today EBC is proud to be one of the Middle East&apos;s
-                    leading professional services firms as we continue to
-                    provide technical expertise and strategic advice to clients
-                    in infrastructure, property &amp; buildings, environmental
-                    and energy sectors.
+                    We aim to be a trusted partner for clients who require
+                    confidence in the performance of their building systems,
+                    delivering expertise that stands behind every commissioning
+                    decision.
                   </p>
                 </div>
               </div>
-
-              {/* Timeline */}
-              <ol className="mt-14 grid gap-px bg-[#D8D8D2] sm:grid-cols-3">
-                {TIMELINE.map((t, i) => (
-                  <li
-                    key={t.year}
-                    data-aos="fade-up"
-                    data-aos-once="true"
-                    data-aos-delay={i * 90}
-                    className="bg-white p-6"
-                  >
-                    <span className="font-mono  text-[0.75rem] font-medium uppercase tracking-[0.15em] text-[#EF3E37]">
-                      {t.year}
-                    </span>
-
-                    <h3 className="mt-3 text-base font-bold tracking-tight text-[#0B0F14]">
-                      {t.title}
-                    </h3>
-
-                    <p className="mt-2 text-sm leading-relaxed text-[#0B0F14]/65">
-                      {t.text}
-                    </p>
-                  </li>
-                ))}
-              </ol>
             </div>
           </div>
         </section>
@@ -125,20 +96,23 @@ export default function About() {
               data-aos-once="true"
               className="lg:col-span-5"
             >
-              <span className="text-[0.75rem] font-medium uppercase tracking-[0.15em] text-[#EF3E37]">
-                Our Mission
+              <span className="text-[0.85rem] font-medium uppercase tracking-[0.15em] text-[#EF3E37]">
+                Our mission
               </span>
 
-              <h2 className="mt-5 text-[clamp(2.25rem,4.4vw,4.5rem)] font-bold uppercase leading-[0.95] tracking-[-0.04em]">
-                A QUALITY-FOCUSED PROCESS FOR ENHANCING PROJECT DELIVERY.
+              <h2 className="mt-5 text-[clamp(2rem,4vw,3rem)] font-bold uppercase leading-[0.95] tracking-[-0.04em]">
+                RAISING THE STANDARD. ENHANCING PROJECT DELIVERY.
               </h2>
 
               <p className="mt-6 leading-relaxed text-white/70">
-                Honesty, integrity, and respect for people are the basis for
-                everything we do. EBC was developed to raise the standard of the
-                commissioning management and documentation process to a level
-                that is not conventionally provided in the construction
-                industry.
+                Honesty, integrity and respect for people are the foundation of
+                everything we do. EBC is committed to delivering a
+                quality-focused approach to MEP Commissioning
+                Management—bringing structure, coordination and technical
+                oversight throughout the commissioning process. We help ensure
+                systems perform as intended, documentation is clear and
+                reliable, and every project is delivered with confidence,
+                precision and measurable results.
               </p>
             </div>
 
@@ -171,12 +145,12 @@ export default function About() {
         <section className="bg-[#f5f6f6] py-20 lg:py-28">
           <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
             <div data-aos="fade-up" data-aos-once="true" className="max-w-2xl">
-              <span className="text-[0.75rem] font-medium uppercase tracking-[0.15em] text-[#EF3E37]">
+              <span className="text-[0.85rem] font-medium uppercase tracking-[0.15em] text-[#EF3E37]">
                 Our Guiding Principles
               </span>
 
-              <h2 className="mt-5 text-[clamp(2.25rem,4.4vw,4.5rem)] font-bold uppercase leading-[0.95] tracking-[-0.04em] text-[#0B0F14]">
-                ALL STAGES OF EACH PROJECT ARE GUIDED BY THESE CORE VALUES.
+              <h2 className="mt-5 text-[clamp(2rem,4.2vw,3.5rem)] font-bold uppercase leading-[0.95] tracking-[-0.04em] text-[#0B0F14]">
+                THE PRINCIPLES THAT GUIDE HOW WE WORK, DELIVER, AND BUILD TRUST.
               </h2>
             </div>
 

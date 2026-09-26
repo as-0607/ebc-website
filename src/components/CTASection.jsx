@@ -4,7 +4,6 @@ export default function CTASection() {
   return (
     <section className="relative overflow-hidden bg-[#f5f6f6]">
       <div className="mx-auto grid w-full max-w-[1400px] items-stretch gap-0 px-6 lg:grid-cols-12 lg:px-10">
-
         {/* Content */}
         <div
           data-aos="fade-up"
@@ -15,19 +14,20 @@ export default function CTASection() {
             <span className="h-px w-12 bg-[#ef3e37]" />
 
             <span className="font-['IBM_Plex_Sans'] text-[0.85rem] font-medium uppercase tracking-[0.12em] text-[#ef3e37]">
-              Next Step
+              BUILT OVER TIME
             </span>
           </div>
 
           <h2 className="mt-6 font-['Archivo'] text-[clamp(2rem,4vw,3rem)] font-extrabold uppercase leading-[0.95] tracking-[-0.03em] text-[#111111] sm:text-5xl lg:text-6xl">
-            YOUR BUILDING IS BUILT.
-            <br />
-            NOW MAKE SURE IT PERFORMS.
+            EXPERIENCE BECOMES EXPERTISE. EXPERTISE BECOMES TRUST.
           </h2>
 
           <p className="mt-6 max-w-xl font-['IBM_Plex_Sans'] text-lg leading-7 text-[#111111]/70">
-            Talk to EBC-International about testing, commissioning and verification for your next
-            project.
+            Our growth has been shaped by the projects we have delivered, the
+            people we have worked with, and the standards we continue to uphold
+            across the Middle East. That experience continues to shape how we
+            approach every project—bringing clarity, discipline and confidence
+            to the commissioning process.
           </p>
 
           {/* Buttons */}
@@ -57,17 +57,14 @@ export default function CTASection() {
           className="relative min-h-[280px] lg:col-span-5"
         >
           <img
-            src="https://theebc-eg.com/wp-content/uploads/2023/01/Ministries-15-16-A-768x354.jpg"
+            src={`${import.meta.env.BASE_URL}/images/CTA.jpeg`}
             alt="Completed facility commissioned by EBC-International"
             loading="lazy"
             className="absolute inset-0 h-full w-full object-cover"
           />
 
-          <span className="absolute bottom-5 left-5 bg-[#111111]/80 px-3 py-2 font-['IBM_Plex_Sans'] text-xs font-medium uppercase tracking-[0.12em] text-white/80">
-            EBC / VERIFIED PERFORMANCE
-          </span>
+          
         </div>
-
       </div>
     </section>
   );

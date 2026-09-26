@@ -28,7 +28,7 @@ export default function PageHeader({ label, title, intro, image, meta }) {
         <div className="flex items-center gap-4">
           <span className="h-px w-12 bg-[#EF3E37]" />
 
-          <span className="font-mono  text-[0.65rem] font-medium uppercase tracking-[0.15em] text-[#EF3E37]">
+          <span className="font-mono  text-[0.85rem] font-medium uppercase tracking-[0.15em] text-[#EF3E37]">
             {label}
           </span>
 
@@ -39,12 +39,12 @@ export default function PageHeader({ label, title, intro, image, meta }) {
           )}
         </div>
 
-        <h1 className="mt-6 max-w-4xl text-[clamp(2rem,4.2vw,4rem)] font-bold uppercase leading-[0.95] tracking-[-0.04em]">
+        <h1 className="mt-6 max-w-4xl text-[clamp(2rem,4vw,3rem)] font-bold uppercase leading-[0.95] tracking-[-0.04em]">
           {title}
         </h1>
 
         {intro && (
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/60">
             {intro}
           </p>
         )}

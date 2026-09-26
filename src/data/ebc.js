@@ -151,20 +151,21 @@ export const SITE = {
   projectsCount: "87+",
 };
 export const MISSION_POINTS = [
-  "Validation of construction integrity.",
-  "Confirmation of operability of the facility in terms of performance, reliability, safety and security.",
-  "Provide cost effective solutions for our clients through the commissioning management process.",
-  "Optimizing energy use.",
-  "Increase productivity by creating optimal workplace environments.",
-  "Provide documentation, to serve as the historical record of the \u201cWhat?, Why? and How to?\u201d of key delivery team decisions throughout the planning and delivery process.",
-  "Maintain facility performance for the building's entire life cycle.",
+  "Construction & System Integrity: Verification of construction quality and system integrity.",
+  "Performance & Reliability: Confirmation that facilities operate as intended, with a focus on performance, reliability, safety, and security.",
+  "Cost-Effective Delivery: Providing cost-effective solutions through effective commissioning management and technical expertise.",
+  "Energy Optimization: Optimizing energy use and improving overall system efficiency.",
+  "Occupant Environment: Creating optimal indoor environments that support comfort, well-being, and productivity.",
+  "Knowledge & Documentation: Providing comprehensive documentation that preserves the “What, Why, and How” behind key project decisions throughout planning, delivery, and commissioning.",
+  "Life-Cycle Performance: Supporting sustained facility performance throughout the building's life cycle.",
 ];
 export const PRINCIPLES = [
-  "Ensuring the safety of all our employees, customers, and associates.",
-  "Valuing people as the essential asset of our company with a shared responsibility in fulfilling our mission.",
-  "Executing quality work that exceeds expectations.",
-  "Governing ourselves with integrity in our operations and professional relationships.",
-  "Demonstrating innovation and an entrepreneurial spirit.",
+  "INTEGRITY: We build trust through honesty, transparency, and respect.",
+  "INDEPENDENCE: We provide objective and unbiased verification.",
+  "TECHNICAL EXCELLENCE: We apply expertise, experience, and proven engineering practices.",
+  "QUALITY & PRECISION: We measure, verify, and document with discipline and accuracy.",
+  "PERFORMANCE: We ensure systems perform as designed and intended.",
+  "CONTINUOUS IMPROVEMENT: We continuously develop our people, processes, and capabilities.",
 ];
 export const TIMELINE = [
   {
